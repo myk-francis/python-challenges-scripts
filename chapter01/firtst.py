@@ -9,3 +9,7 @@ print(c)
 # calculate the area
 area = a * b / 2
 print(area)
+
+# calculate the perimeter
+perimeter = a + b + c
+print(perimeter)
