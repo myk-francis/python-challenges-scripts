@@ -13,3 +13,11 @@ print(area)
 # calculate the perimeter
 perimeter = a + b + c
 print(perimeter)
+
+# calculate the radius
+radius = c / 2
+print(radius)
+
+# calculate the diameter
+diameter = radius * 2
+print(diameter)
