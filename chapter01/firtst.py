@@ -21,3 +21,7 @@ print(radius)
 # calculate the diameter
 diameter = radius * 2
 print(diameter)
+
+# calculate the circumference
+circumference = 2 * math.pi * radius
+print(circumference)
