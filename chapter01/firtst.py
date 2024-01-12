@@ -25,3 +25,11 @@ print(diameter)
 # calculate the circumference
 circumference = 2 * math.pi * radius
 print(circumference)
+
+# calculate the area of the circle
+area = math.pi * radius**2
+print(area)
+
+# calculate the area of the triangle
+area = (a * b) / 2
+print(area)
