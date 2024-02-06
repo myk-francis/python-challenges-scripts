@@ -33,3 +33,8 @@ print(area)
 # calculate the area of the triangle
 area = (a * b) / 2
 print(area)
+
+
+something_cool = a + b
+print(something_cool)
+
