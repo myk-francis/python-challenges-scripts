@@ -38,3 +38,6 @@ print(area)
 something_cool = a + b
 print(something_cool)
 
+something_cool = a * b
+print(something_cool)
+
