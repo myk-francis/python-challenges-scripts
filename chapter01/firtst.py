@@ -44,3 +44,6 @@ print(something_cool)
 plus = a + b
 print(plus)
 
+minus = a - b
+print(minus)
+
