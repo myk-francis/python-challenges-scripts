@@ -41,3 +41,6 @@ print(something_cool)
 something_cool = a * b
 print(something_cool)
 
+plus = a + b
+print(plus)
+
