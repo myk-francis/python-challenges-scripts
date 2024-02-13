@@ -6,14 +6,14 @@ d = Delorean()
 
 log = '[2018-05-05T11:07:12.267897] - SALE - PRODUCT: 1345 - PRICE: $09.99'
 
-divide_it = log.split('-')
+divide_it = log.split(' - ')
 
-print(divide_it)
+timestamp_string, _, product_string, price_string = divide_it
 
-timestamp_string = divide_it[0]
-product_id = divide_it[2]
-price = divide_it[3]
+time_stamp = parse(timestamp_string.strip('[]'))
 
-# timestamp_string, _, product_string, price_string = divide_it
-print(timestamp_string, product_id, price)
+product_id = int(product_string.split(':')[-1])
 
+price = Decimal(price_string.split('$')[-1])
+
+print(time_stamp, product_id, price)
