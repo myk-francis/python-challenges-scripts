@@ -2,6 +2,7 @@ import argparse
 
 
 def main(number):
+
     print('#' * number)
 
 
