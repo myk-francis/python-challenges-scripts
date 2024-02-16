@@ -13,7 +13,7 @@ if __name__ == '__main__':
     parser.add_argument('-n1', type=int, help='A number', default=1)
     parser.add_argument('-n2', type=int, help='Another number', default=1)
     parser.add_argument('--config', '-c', type=argparse.FileType('r'), help='config file')
-    parser.add_argument('-o', dest='output', type=argparse.FileType('w'), help='output file', default=sys.stdout)
+    parser.add_argument('-o', dest='output', type=argparse.FileType('a'), help='output file', default=sys.stdout)
 
     args = parser.parse_args()
 
