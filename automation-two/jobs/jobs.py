@@ -13,7 +13,7 @@ class Jobs(webdriver.Chrome):
         self.quit()
 
     def landing_page(self):
-        self.get(const.BASE_URL)
+        self.get(const.HR_BASE_URL)
 
     def get_titles(self):
         titles = self.find_elements(By.CSS_SELECTOR, "a[class='advert-title']")
