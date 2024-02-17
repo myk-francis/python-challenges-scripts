@@ -1,6 +1,8 @@
+from selenium import webdriver
+from jobs.jobs import Jobs
 
-from gov_jobs.jobs import Jobs
+browser = webdriver.Chrome()
 
-with Jobs() as bot:
+with Jobs(driver=browser) as bot:
     bot.landing_page()
     print('Done!')
