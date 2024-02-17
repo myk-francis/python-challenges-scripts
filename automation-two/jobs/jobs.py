@@ -1,6 +1,7 @@
 from selenium import webdriver
 from selenium.webdriver.common.by import By
 import jobs.constants as const 
+import re
 
 class Jobs(webdriver.Chrome):
     def __init__(self):
@@ -20,4 +21,4 @@ class Jobs(webdriver.Chrome):
 
     def get_closing_dates(self):
         dates = self.find_elements(By.CSS_SELECTOR, "td[class='text-right']")
-        print ([date.text for date in dates])
+        print ([re.search(r'\d{4}-\d{2}-\d{2}', date.text).group() for date in dates])
