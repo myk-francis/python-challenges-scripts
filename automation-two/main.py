@@ -1,5 +1,6 @@
 
 from gov_jobs.jobs import Jobs
 
-instance = Jobs()
-instance.landing_page()
+with Jobs() as bot:
+    bot.landing_page()
+    print('Done!')
