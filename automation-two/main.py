@@ -1,8 +1,5 @@
-from selenium import webdriver
 
+from gov_jobs.jobs import Jobs
 
-driver = webdriver.Chrome()
-
-driver.get("https://portal.ajira.go.tz/advert/index/13")
-
-driver.quit()
+instance = Jobs()
+instance.landing_page()
