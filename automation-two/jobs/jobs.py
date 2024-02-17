@@ -17,8 +17,8 @@ class Jobs(webdriver.Chrome):
 
     def get_titles(self):
         titles = self.find_elements(By.CSS_SELECTOR, "a[class='advert-title']")
-        print ([title.text for title in titles])
+        return [title.text for title in titles]
 
     def get_closing_dates(self):
         dates = self.find_elements(By.CSS_SELECTOR, "td[class='text-right']")
-        print ([re.search(r'\d{4}-\d{2}-\d{2}', date.text).group() for date in dates])
+        return [re.search(r'\d{4}-\d{2}-\d{2}', date.text).group() for date in dates]
