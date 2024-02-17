@@ -6,5 +6,8 @@ class Jobs:
         self.driver = webdriver.Chrome()
         self.driver.quit()
 
+    def __exit__(self):
+        self.driver.quit()
+
     def landing_page(self):
         self.driver.get(const.BASE_URL)
