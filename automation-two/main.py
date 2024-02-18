@@ -14,6 +14,6 @@ with Jobs() as bot:
 
     print(final_text)
 
-    pywhatkit.sendwhatmsg("+255710503304", final_text, 0, 4, True, 2)
+    # pywhatkit.sendwhatmsg("+255710503304", final_text, 0, 4, True, 2)
     
     print('Done!')
