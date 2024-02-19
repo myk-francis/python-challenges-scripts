@@ -19,3 +19,5 @@ price = Decimal(price_string.split('$')[-1])
 print(time_stamp, product_id, price)
 
 print("This is for my own sanity")
+
+print("Last one for clarity")
