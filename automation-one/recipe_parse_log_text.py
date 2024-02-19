@@ -17,3 +17,5 @@ product_id = int(product_string.split(':')[-1])
 price = Decimal(price_string.split('$')[-1])
 
 print(time_stamp, product_id, price)
+
+print("This is for my own sanity")
