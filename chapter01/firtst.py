@@ -47,3 +47,6 @@ print(plus)
 minus = a - b
 print(minus)
 
+for_positive = a + b
+print(for_positive)
+
