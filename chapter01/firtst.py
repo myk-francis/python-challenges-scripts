@@ -50,3 +50,6 @@ print(minus)
 for_positive = a + b
 print(for_positive)
 
+new_edition = a + b
+print(new_edition)
+
